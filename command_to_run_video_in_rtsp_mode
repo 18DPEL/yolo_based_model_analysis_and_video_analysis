@@ -1,1 +1,6 @@
+note: it work first open the mediamtx_v1.13.1_windows_amd64 then run the mediamtx.exe before that you have to install ffmpeg and set the environment variable then run the mediamtx.exe and open another cmd then paste
+the below command and edit the video file name according to your video file name then hit enter , then will run on local host just you need copy the localhost:8554/mystream paste on the place of rstp link 
+
+
 ffmpeg -re -stream_loop -1 -i file.mp4 -c copy -f rtsp rtsp://localhost:8554/mystream
+
